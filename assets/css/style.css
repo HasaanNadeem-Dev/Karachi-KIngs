@@ -1728,19 +1728,47 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    padding-bottom: 30px;
 }
 
 .sponsor-group {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+/* 2-column grid row for sponsors below Titanium */
+.sponsor-pair-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.sponsor-pair-row .sponsor-group {
+    flex: 1 1 200px;
+    max-width: 280px;
+}
+
+@media (max-width: 768px) {
+    .sponsor-pair-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sponsor-pair-row .sponsor-group {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .sponsor-label {
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 700;
     color: #888888;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     position: relative;
     display: inline-block;
 }
@@ -1767,16 +1795,17 @@ body {
 .sponsor-item {
     display: flex;
     align-items: center;
+    margin-top: 10px;
     justify-content: center;
     width: 250px;
-    height: 120px;
+    height: 90px;
     filter: none !important;
     opacity: 1 !important;
 }
 
 .sponsor-item img {
-    max-width: 90%;
-    max-height: 90px;
+    max-width: 100%;
+    max-height: 100px;
     width: auto;
     height: auto;
     object-fit: contain;
@@ -1820,4 +1849,86 @@ body {
     .title-sponsor img {
         max-height: 80px;
     }
+}
+
+/* ==========================================
+   PREMIUM PRELOADER (HIGH-FIDELITY)
+   ========================================== */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh !important;
+}
+
+.kk-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #061531; /* Deep Karachi Kings Navy */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s;
+}
+
+.kk-preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-content {
+    text-align: center;
+    position: relative;
+}
+
+.preloader-logo {
+    width: 180px;
+    height: auto;
+    animation: pulseGlow 2s infinite ease-in-out;
+    filter: drop-shadow(0 0 15px rgba(212, 172, 13, 0.2));
+}
+
+.preloader-bar-container {
+    width: 200px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.preloader-bar {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #d4ac0d, transparent);
+    animation: loadingBar 1.5s infinite linear;
+}
+
+.loading-text {
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(212, 172, 13, 0.1)); }
+    50% { transform: scale(1.05); filter: drop-shadow(0 0 40px rgba(212, 172, 13, 0.4)); }
+    100% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(212, 172, 13, 0.1)); }
+}
+
+@keyframes loadingBar {
+    0% { left: -100%; }
+    100% { left: 100%; }
 }
