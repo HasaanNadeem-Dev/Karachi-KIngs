@@ -1,28 +1,3 @@
-// Preloader Handler
-window.addEventListener('load', () => {
-    const preloader = document.querySelector('.kk-preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-            document.body.classList.remove('no-scroll');
-            
-            // Remove from DOM after transition
-            setTimeout(() => {
-                preloader.remove();
-            }, 800);
-        }, 500); // Small buffer for visual comfort
-    }
-});
-
-// Fallback: If page takes too long to load (e.g. broken image), force show content
-setTimeout(() => {
-    const preloader = document.querySelector('.kk-preloader');
-    if (preloader) {
-        preloader.classList.add('fade-out');
-        document.body.classList.remove('no-scroll');
-    }
-}, 5000); // 5 second fallback
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const navLinks = document.querySelector('.nav-links');

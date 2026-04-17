@@ -11,6 +11,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Rajdhani:wght@500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Preloading -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/rajdhani/v15/L7raGz9mSAdYy97M805-N9IO.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
@@ -18,25 +20,14 @@
     <link rel="stylesheet" href="assets/css/shop.css">
 </head>
 
-<body class="no-scroll">
-    <!-- Premium Preloader -->
-    <div class="kk-preloader">
-        <div class="preloader-content">
-            <img src="assets/img/teams/Teams-Logo/karachi-kings.png" alt="Karachi Kings" class="preloader-logo">
-            <div class="preloader-bar-container">
-                <div class="preloader-bar"></div>
-            </div>
-            <div class="loading-text">Loading Experience</div>
-        </div>
-    </div>
-
+<body class="">
     <header class="kk-header">
         <div class="container unified-header">
             <div class="brand-section">
                 <div class="logo-container">
                     <a href="index.html">
                         <img src="assets/img/teams/Teams-Logo/karachi-kings.png" alt="Karachi Kings Logo"
-                            class="team-logo">
+                            class="team-logo" fetchpriority="high">
                     </a>
                 </div>
                 <span class="hashtag">#DEDHANADHAN</span>
@@ -97,7 +88,7 @@
                         </div>
                         <a href="https://arysahulatbazar.pk/product/karachi-kings-alternate-t-shirt-2026/" target="_blank" class="product-link">
                             <div class="product-image-container">
-                                <img src="assets/img/shop/buy-karachi-kings-alternative-t-shirt-2026-front.jpg" alt="Front" class="img-front">
+                                <img src="assets/img/shop/buy-karachi-kings-alternative-t-shirt-2026-front.jpg" alt="Front" class="img-front" fetchpriority="high" loading="eager">
                                 <img src="assets/img/shop/buy-karachi-kings-alternative-t-shirt-2026-back.jpg" alt="Back" class="img-back">
                             </div>
                             <div class="product-info">

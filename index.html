@@ -11,32 +11,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Rajdhani:wght@500;600;700&display=swap"
         rel="stylesheet">
+    <!-- Font Preloading -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/rajdhani/v15/L7raGz9mSAdYy97M805-N9IO.woff2" as="font" type="font/woff2" crossorigin>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="no-scroll">
-    <!-- Premium Preloader -->
-    <div class="kk-preloader">
-        <div class="preloader-content">
-            <img src="assets/img/teams/Teams-Logo/karachi-kings.png" alt="Karachi Kings" class="preloader-logo">
-            <div class="preloader-bar-container">
-                <div class="preloader-bar"></div>
-            </div>
-            <div class="loading-text">Loading Experience</div>
-        </div>
-    </div>
-
+<body class="">
     <header class="kk-header">
+
         <div class="container unified-header">
             <!-- Left Side: Large Team Logo Stack -->
             <div class="brand-section">
                 <div class="logo-container">
                     <a href="index.html">
                         <img src="assets/img/teams/Teams-Logo/karachi-kings.png" alt="Karachi Kings Logo"
-                            class="team-logo">
+                            class="team-logo" fetchpriority="high">
                     </a>
                 </div>
                 <span class="hashtag">#DEDHANADHAN</span>
@@ -97,7 +89,7 @@
                         <!-- Slide 1: Moeen Ali -->
                         <div class="slide active">
                             <div class="article-image-wrapper">
-                                <img src="assets/img/homepage/slider/1.jpg" alt="Moeen Ali" class="featured-img">
+                                <img src="assets/img/homepage/slider/1.jpg" alt="Moeen Ali" class="featured-img" fetchpriority="high" loading="eager">
                                 <div class="article-overlay">
                                     <h2 class="article-title"><span>" Our powerplay bowling was not great, starting with
                                             me."</span>
