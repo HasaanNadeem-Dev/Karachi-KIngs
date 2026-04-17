@@ -1,0 +1,335 @@
+/* 
+    Karachi Kings Fixtures Page Styles
+    Author: Antigravity
+    100% MATCH: Final High-Fidelity Broadcast Implementation
+    Typography: Oxanium (Tech/Geometric) - Matching Squad Page Cards
+*/
+
+.team-hero {
+    background:
+        linear-gradient(115deg, #061531 49.9%, transparent 50%),
+        linear-gradient(rgba(6, 21, 49, 0.5), rgba(6, 21, 49, 0.5)),
+        url('../img/squad/image.png') no-repeat right center / auto 140%,
+        #061531;
+    padding: 100px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 30px 30px -30px rgba(0, 0, 0, 0.8), inset 0 -45px 35px -30px rgba(0, 0, 0, 0.7);
+}
+
+.team-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.page-title span {
+    color: #d4ac0d;
+}
+
+.page-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+/* Fixtures Content Area */
+.fixtures-content {
+    background-color: #f5f7fa;
+    padding: 80px 0;
+}
+
+.fixtures-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 100% MATCH TICKET CARD */
+.ticket-card {
+    width: 550px;
+    height: 200px;
+    background: url('../img/Fixtures/ticket bg.png') no-repeat center center / 100% 100%;
+    display: flex;
+    position: relative;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.1));
+    isolation: isolate;
+    /* Ensures internal blending works correctly */
+}
+
+.ticket-card:hover {
+    /* No hover effect */
+}
+
+/* Left Section (White Part) */
+.t-left {
+    width: 27.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.t-month {
+    font-family: 'Oxanium', sans-serif;
+    /* High-impact geometric */
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a3a6b;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.t-date {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 58px;
+    /* Massive impact */
+    font-weight: 900;
+    color: #000000;
+    line-height: 1;
+    margin: -5px 0 0;
+    letter-spacing: -2px;
+}
+
+.t-divider {
+    width: 60%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.t-match-name {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a3a6b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Right Section (Navy Part) */
+.t-right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* New 3-Div Flex Time Badge */
+.t-time-badge {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+    /* Red gaps between yellow elements */
+}
+
+.t-time-badge>div {
+    background: #FFC107;
+    height: 26px;
+    transform: skewX(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-main-block {
+    padding: 0 15px;
+}
+
+.time-main-block .time-val {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    transform: skewX(20deg);
+    /* Un-skew text */
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.time-stripe {
+    width: 6px;
+}
+
+.t-time-badge>div:nth-child(2) {
+    width: 15px;
+    /* Increased to make it very noticeable */
+}
+
+
+/* Matchup Section */
+.t-matchup-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    /* Wide gap for the VS icon space */
+    margin-top: 15px;
+}
+
+.t-team-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    /* Wider container for Team Names */
+    text-align: center;
+}
+
+.t-logo-holder {
+    width: 70px;
+    /* Scaled up logos */
+    height: 70px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 8px;
+}
+
+.t-logo-holder img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.t-name {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 14px;
+    /* Larger team names */
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.t-vs-logo {
+    position: absolute;
+    top: 57%;
+    left: 63%;
+    /* Precision center for navy panel */
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background-image: url('../img/Fixtures/vs.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    mix-blend-mode: screen;
+    filter: brightness(1.1) contrast(1.1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* Footer Button */
+.t-footer {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+    pointer-events: none;
+}
+
+.t-venue {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
+
+.mc-btn {
+    pointer-events: auto;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 6px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1px solid #061531;
+    /* Clean Navy Stroke */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+}
+
+.mc-btn:hover {
+    /* No hover effect */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .ticket-card {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: 520px;
+        flex-direction: column;
+        background: #061531;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .t-left {
+        width: 100%;
+        height: 180px;
+        background: #ffffff;
+    }
+
+    .t-right {
+        width: 100%;
+        flex: 1;
+        background: url('../img/Fixtures/ticket bg.png') no-repeat center center / cover;
+    }
+
+    .t-matchup-area {
+        gap: 20px;
+    }
+}

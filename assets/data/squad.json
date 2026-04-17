@@ -1,0 +1,249 @@
+[
+  {
+    "name": "David Warner",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/David-Warner-removebg-preview.png",
+    "stats": {
+      "m": "176",
+      "r": "6397",
+      "w": "0",
+      "sr": "140.2",
+      "best": "126",
+      "100s": "4/52"
+    }
+  },
+  {
+    "name": "Rizwanullah",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/Rizwanullah-removebg-preview.png",
+    "stats": {
+      "m": "98",
+      "r": "3200",
+      "w": "0",
+      "sr": "129.8",
+      "best": "104*",
+      "100s": "1/24"
+    }
+  },
+  {
+    "name": "Muhammad Waseem",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/Muhammad-Waseem-removebg-preview.png",
+    "stats": {
+      "m": "52",
+      "r": "1640",
+      "w": "0",
+      "sr": "148.5",
+      "best": "102*",
+      "100s": "1/12"
+    }
+  },
+  {
+    "name": "Hamza Sohail",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/Hamza-Sohail-removebg-preview.png",
+    "stats": {
+      "m": "12",
+      "r": "340",
+      "w": "0",
+      "sr": "118.0",
+      "best": "64",
+      "100s": "0/2"
+    }
+  },
+  {
+    "name": "Haroon Arshad",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/Haroon-Arshad-removebg-preview.png",
+    "stats": {
+      "m": "15",
+      "r": "280",
+      "w": "2",
+      "sr": "122.5",
+      "best": "45",
+      "100s": "0/0"
+    }
+  },
+  {
+    "name": "Aqib Ilyas",
+    "role": "BATTER",
+    "img": "assets/img/teams/Team-Player/Aqib-Ilyas-removebg-preview (1).png",
+    "stats": {
+      "m": "32",
+      "r": "890",
+      "w": "5",
+      "sr": "128.5",
+      "best": "82",
+      "100s": "0/6"
+    }
+  },
+  {
+    "name": "Moeen Ali",
+    "role": "ALL-ROUNDER",
+    "img": "assets/img/teams/Team-Player/Moeen-Ali-removebg-preview.png",
+    "stats": {
+      "m": "150",
+      "r": "2840",
+      "w": "110",
+      "sr": "142.8",
+      "best": "85",
+      "econ": "7.95",
+      "fig": "3/21",
+      "100s": "0/15"
+    }
+  },
+  {
+    "name": "Khushdil Shah",
+    "role": "ALL-ROUNDER",
+    "img": "assets/img/teams/Team-Player/Khushdil-Shah-removebg-preview.png",
+    "stats": {
+      "m": "78",
+      "r": "1240",
+      "w": "35",
+      "sr": "138.2",
+      "best": "71*",
+      "econ": "8.2",
+      "fig": "3/24",
+      "100s": "0/7"
+    }
+  },
+  {
+    "name": "Salman Ali Agha",
+    "role": "ALL-ROUNDER",
+    "img": "assets/img/teams/Team-Player/Salman-Ali-Agha-removebg-preview.png",
+    "stats": {
+      "m": "48",
+      "r": "1150",
+      "w": "28",
+      "sr": "126.4",
+      "best": "74",
+      "econ": "7.6",
+      "fig": "3/18",
+      "100s": "0/6"
+    }
+  },
+  {
+    "name": "Azam Khan",
+    "role": "WICKET KEEPER",
+    "img": "assets/img/teams/Team-Player/Azam-Khan-removebg-preview.png",
+    "stats": {
+      "m": "65",
+      "r": "1420",
+      "w": "0",
+      "sr": "155.4",
+      "best": "97",
+      "100s": "0/8"
+    }
+  },
+  {
+    "name": "Saad Baig",
+    "role": "WICKET KEEPER",
+    "img": "assets/img/teams/Team-Player/Saad-Baig-removebg-preview.png",
+    "stats": {
+      "m": "14",
+      "r": "310",
+      "w": "0",
+      "sr": "124.2",
+      "best": "58",
+      "100s": "0/3"
+    }
+  },
+  {
+    "name": "Hasan Ali",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Hasan-Ali-removebg-preview.png",
+    "stats": {
+      "m": "112",
+      "r": "680",
+      "w": "154",
+      "sr": "135.0",
+      "best": "42",
+      "econ": "8.15",
+      "fig": "5/18"
+    }
+  },
+  {
+    "name": "Adam Zampa",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Adam-Zampa-removebg-preview.png",
+    "stats": {
+      "m": "98",
+      "r": "250",
+      "w": "142",
+      "sr": "105",
+      "best": "15*",
+      "econ": "7.12",
+      "fig": "6/19"
+    }
+  },
+  {
+    "name": "Abbas Afridi",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Abbas-Afridi-removebg-preview.png",
+    "stats": {
+      "m": "45",
+      "r": "120",
+      "w": "58",
+      "sr": "110",
+      "best": "3/15",
+      "econ": "7.9",
+      "fig": "4/20"
+    }
+  },
+  {
+    "name": "Ihsanullah",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Ihsanullah-removebg-preview.png",
+    "stats": {
+      "m": "24",
+      "r": "15",
+      "w": "38",
+      "sr": "80.0",
+      "best": "8*",
+      "econ": "7.45",
+      "fig": "5/12"
+    }
+  },
+  {
+    "name": "Mir Hamza",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Mir-Hamza-removebg-preview.png",
+    "stats": {
+      "m": "42",
+      "r": "85",
+      "w": "54",
+      "sr": "98.5",
+      "best": "15*",
+      "econ": "7.85",
+      "fig": "4/22"
+    }
+  },
+  {
+    "name": "Khuzaima Bin Tanveer",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Khuzaima-Bin-Tanveer-removebg-preview.png",
+    "stats": {
+      "m": "8",
+      "r": "20",
+      "w": "12",
+      "sr": "95.0",
+      "best": "10",
+      "econ": "8.8",
+      "fig": "3/32"
+    }
+  },
+  {
+    "name": "Shahid Aziz",
+    "role": "BOWLER",
+    "img": "assets/img/teams/Team-Player/Shahid-Aziz-removebg-preview (1).png",
+    "stats": {
+      "m": "10",
+      "r": "15",
+      "w": "14",
+      "sr": "85.0",
+      "best": "12",
+      "econ": "8.3",
+      "fig": "4/35"
+    }
+  }
+]

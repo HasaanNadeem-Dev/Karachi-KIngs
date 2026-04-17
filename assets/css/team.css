@@ -1,0 +1,439 @@
+/* ==========================================
+   TEAM PAGE SPECIFIC STYLES
+   ========================================== */
+
+.team-hero {
+    /* Composite background: Gradient Mask + Opacity Overlay + Scaled Up Squad Image + Base Blue Color */
+    background:
+        linear-gradient(115deg, #061531 49.9%, transparent 50%),
+        linear-gradient(rgba(6, 21, 49, 0.5), rgba(6, 21, 49, 0.5)),
+        url('../img/squad/image.png') no-repeat right center / auto 140%,
+        #061531;
+    padding: 100px 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 30px 30px -30px rgba(0,0,0,0.8), inset 0 -45px 35px -30px rgba(0,0,0,0.7);
+    /* Subtle balance: standard top, moderate bottom shadow */
+}
+
+.team-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title span {
+    color: #d4ac0d;
+}
+
+.page-subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+/* Players Listing Section */
+.players-listing-section {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.squad-category {
+    margin-bottom: 80px;
+}
+
+.category-header-line {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-header-line::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.08);
+    /* Faint divider line */
+    z-index: 1;
+}
+
+.category-badge {
+    background: #415e91;
+    /* Light Purple pill */
+    color: white;
+    /* Solid deep purple text contrast */
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+}
+
+.players-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    /* Reduced for more compact layout */
+    justify-content: center;
+    gap: 15px;
+}
+
+/* PIXEL PERFECT PLAYER CARD */
+.player-card {
+    width: 260px;
+    height: 380px;
+    /* Updated compact scale */
+    background-color: #0e2652;
+    /* Matches footer navy to fill any gaps */
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+
+
+.card-bg-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/squad/cards/Gemini_Generated_Image_g9nou9g9nou9g9no.png');
+    background-size: 100% 100%;
+    /* Fill exactly */
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+/* Kit number removed as requested */
+.player-kit-number {
+    display: none;
+}
+
+.player-photo {
+    position: absolute;
+    bottom: 60px;
+    /* Adjusted for 380px height */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    /* Scaled down to fit 380px card */
+    width: auto;
+    object-fit: contain;
+    z-index: 3;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+}
+
+.player-info-container {
+    position: absolute;
+    bottom: -2px;
+    /* Extra overlap to eliminate any rendering gaps or light lines at the bottom */
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.player-name-plate {
+    background: #FFC107;
+    /* Solid Impact Gold */
+    padding: 10px 15px;
+    /* Tighter padding for narrow compact layout */
+    width: 96%;
+    /* Not full width as requested */
+    box-sizing: border-box;
+    /* CRITICAL: Prevent horizontal overflow */
+    position: relative;
+    z-index: 12;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+    /* Pushed slightly lower for balanced 380px layout */
+}
+
+.p-fname {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    /* Scaled for compact width */
+    font-weight: 800;
+    color: #2b1d42;
+    margin: 0;
+    line-height: 1;
+}
+
+.p-lname {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    /* Scaled for compact width */
+    font-weight: 900;
+    color: #2b1d42;
+    margin: 0;
+    line-height: 1;
+}
+
+.player-bottom-section {
+    width: 100%;
+}
+
+/* 100% MATCH ROLE BADGE */
+.player-role-badge {
+    background: #0e2652;
+    /* Deep purple/navy to match footer */
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-top-right-radius: 12px;
+    /* Signature rounded corner */
+    position: relative;
+    z-index: 11;
+    margin-bottom: -1px;
+    /* Seamless into footer */
+}
+
+.player-role-badge i {
+    transform: rotate(-15deg);
+    /* Slightly slanted icon */
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.player-card-footer {
+    background: #0e2652;
+    /* Solid Deep Navy/Purple */
+    padding: 15px 20px;
+    position: relative;
+    z-index: 10;
+    /* No border-radius here to avoid sub-pixel bleed gaps; card's overflow:hidden does the job */
+}
+
+.player-stats-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.s-divider {
+    width: 1px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.15);
+    /* Thin subtle divider */
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1;
+}
+
+.s-val {
+    display: block;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 24px;
+    /* Scaled down for compact width */
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.s-lbl {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 9px;
+    /* Scaled down for compact width */
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+/* HOVER ANIMATION PANEL */
+.hover-detail-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cover FULL card */
+    background: linear-gradient(135deg, #ffffff 40%, #e2e8f0 100%);
+    /* Bright interface overlay */
+    z-index: 15;
+    /* Rises over everything, completely overtaking the base card */
+    transform: translateY(102%);
+    /* Moved slightly further down to avoid sub-pixel edge bleeding (light line at bottom) */
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* Essential animation timing curve */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Pushes text straight to the top edge */
+}
+
+.player-card:hover .hover-detail-panel {
+    transform: translateY(0);
+    /* Slide confidently into place */
+}
+
+/* Add the watermark doodle shade backwards into the slide panel */
+.hover-detail-panel::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 17px;
+    /* Offset slightly so the doodles focus on the right side behind the player */
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/squad/cards/Gemini_Generated_Image_g9nou9g9nou9g9no.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.10;
+    /* Soft shade effect */
+    z-index: 0;
+    /* Strict background layer inside the panel */
+    pointer-events: none;
+}
+
+.hd-player-photo {
+    position: absolute;
+    bottom: -70px;
+    right: -15px;
+    /* Anchor bottom right */
+    height: 290px;
+    /* Scaled down for 380px height */
+    z-index: 1;
+    /* Rests behind interactive text layers */
+    pointer-events: none;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+}
+
+.player-card:hover .player-info-container {
+    opacity: 0;
+}
+
+.player-info-container {
+    transition: opacity 0.3s ease;
+}
+
+/* Base header block layered over photo */
+.hd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+.hd-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: rgba(6, 21, 49, 0.6);
+    letter-spacing: 1px;
+}
+
+.hd-value {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    color: #061531;
+    font-weight: 800;
+}
+
+.hd-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+    /* Taller row gap */
+    width: 65%;
+    /* Constrain to left side to make room for player on the right */
+    position: relative;
+    z-index: 5;
+}
+
+.hd-stat {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.hd-s-lbl {
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    color: rgba(6, 21, 49, 0.5);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.hd-s-val {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: #061531;
+    /* Bold Navy text */
+}
+
+.staff-note-minimal {
+    text-align: center;
+    padding: 20px;
+    color: rgba(6, 21, 49, 0.4);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.staff-note-minimal i {
+    font-size: 24px;
+    color: rgba(6, 21, 49, 0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 40px;
+    }
+
+    .team-hero {
+        padding: 80px 0 40px;
+    }
+}

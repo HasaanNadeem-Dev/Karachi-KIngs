@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "match_ended": true,
+    "match": "Karachi Kings vs Islamabad United",
+    "opponent_name": "Islamabad United",
+    "karachi": {
+        "score": "150/6",
+        "overs": "16"
+    },
+    "islamabad": {
+        "score": "153/2",
+        "overs": "16"
+    },
+    "raw_status": "Islamabad United won by 8 wkts"
+}
